@@ -1,0 +1,32 @@
+{
+  "name": "merch-geek",
+  "version": "1.0.0",
+  "description": "A merch store for people who love collecting merch ",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./resources/SASS/main.scss ./resources/CSS/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass ./resources/SASS/main.scss ./resources/CSS/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./resources/CSS/style.comp.css -o ./resources/CSS/style.prefix.css",
+    "compress:css": "node-sass ./resources/CSS/style.prefix.css ./resources/CSS/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruemisa/merch-geek.git"
+  },
+  "author": "Ruel Alfonso Misa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruemisa/merch-geek/issues"
+  },
+  "homepage": "https://github.com/ruemisa/merch-geek#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.4",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.1"
+  }
+}
