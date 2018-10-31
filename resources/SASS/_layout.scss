@@ -3,24 +3,33 @@
     margin: 10rem auto;
     // Change later
     background-color: var(--color-grey-dark-1);
-    // Place in css property later
-    box-shadow: 0 1rem 6rem var(--color-shadow);
+    box-shadow: var(--shadow-1);
     //for testing
     min-height: 50rem;
 }
 
 .header {
+    height: 5rem;
+    background-color: var(--color-grey-light-2);
+    border-bottom: 1px solid var(--color-grey-light-3);
+}
 
+.content {
+    display: flex;
+    
 }
 
 .sidebar {
-
-
-    &__navigation {
-
-    }
+    // width of sidebar
+    // Adjust later
+    flex: 0 0 18%;
+    // Change later
+    background-color: var(--color-white);
 }
 
 .product-display {
-
+    // width of display (remaining width)
+    flex: 1;
+    // For testing
+    background-color: var(--color-secondary);
 }

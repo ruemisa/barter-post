@@ -1,7 +1,7 @@
 {
-  "name": "merch-geek",
+  "name": "Barter Trading Post",
   "version": "1.0.0",
-  "description": "A merch store for people who love collecting merch ",
+  "description": "A way for people to trade commodities",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass ./resources/SASS/main.scss ./resources/CSS/style.css -w",

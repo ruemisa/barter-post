@@ -1,6 +1,6 @@
-# Merch Geek #
+# Barter Trading Post #
 
-Basic merch page
+Barter Trading Post
 
 #### Author ####
 
