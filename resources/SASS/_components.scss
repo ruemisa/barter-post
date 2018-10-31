@@ -44,14 +44,9 @@
         }
     }
 
-    // To set background-color the same as input when focused
-    &__input:focus + &__btn {
-        background-color: var(--color-grey-light-3);
-    }
-
     &__btn {
         border: none;
-        background-color: var(--color-grey-light-2);
+        background-color: transparent;
 
         &:focus {
             outline: none;

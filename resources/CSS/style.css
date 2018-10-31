@@ -80,11 +80,9 @@ li {
     .search__input::-webkit-input-placeholder {
       font-weight: 300;
       color: var(--color-grey-dark-2); }
-  .search__input:focus + .search__btn {
-    background-color: var(--color-grey-light-3); }
   .search__btn {
     border: none;
-    background-color: var(--color-grey-light-2); }
+    background-color: transparent; }
     .search__btn:focus {
       outline: none; }
     .search__btn:active {
