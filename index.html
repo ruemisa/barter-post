@@ -9,22 +9,58 @@
     <link rel="stylesheet" href="./resources/CSS/style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="" alt="Merch Geek Logo" class="header__logo">
 
+    <!-- MAIN CONTAINER OF ENTIRE WEB APP -->
+    <div class="container">
+        <!-- HEADER AREA -->
+        <header class="header">
+            <!-- LOGO -->
+            <img src="" alt="Merch Geek Logo" class="logo">
+
+            <!-- SEARCH BAR -->
             <form action="" class="search">
                 <input type="text" class="search__input" placeholder="Search for Merch">
+                <!-- SEARCH BUTTON USING SVG -->
                 <button class="search__btn">
-
+                    <svg class="search__icon">
+                        <use xlink:href="./resources/img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
                 </button>
             </form>
+
+            <nav class="user-dock">
+                <div class="user-dock__icon-box">
+                    <svg class="user-dock__icon">
+                        <use xlink:href="./resources/img/sprite.svg#icon-bookmarks"></use>
+                    </svg>
+                    <span class="user-dock__notification">3</span>
+                </div>
+                <div class="user-dock__icon-box">
+                    <svg class="user-dock__icon">
+                        <use xlink:href="./resources/img/sprite.svg#icon-typing"></use>
+                    </svg>
+                    <span class="user-dock__notification">10</span>
+                </div>
+                <div class="user-dock__icon-box">
+                    <svg class="user-dock__icon">
+                        <use xlink:href="./resources/img/sprite.svg#icon-shopping-cart"></use>
+                    </svg>
+                    <span class="user-dock__notification">1</span>
+                </div>
+                <div class="user-dock__user">
+                    <img src="" alt="Current user photo" class="user-dock__user-img">
+                    <span class="user-nav__user-name">Ricky</span>
+                </div>
+            </nav>
         </header>
 
+        <!-- CONTENT AREA BELOW HEADER -->
         <div class="content">
+            <!-- SIDE BAR NAVIGATION -->
             <aside class="sidebar">
                 NAVIGATION
             </aside>
+            <!-- MAIN PRODUCT DISPLAY -->
             <main class="product-display">
                 PRODUCT DISPLAY
             </main>
