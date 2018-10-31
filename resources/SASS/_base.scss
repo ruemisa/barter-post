@@ -1,0 +1,72 @@
+// CSS Variables 
+:root {
+    // COLORS
+    // Neutrals
+    --color-white: #fefefe;
+    --color-black: #1a1918;
+    --color-shadow: rgba(26, 25, 24, .3);
+
+    --color-grey-light-1: #f6f6f6;
+    --color-grey-light-2: #eeeeed;
+    --color-grey-light-3: #e6e5e4;
+    --color-grey-light-4: #dedddb;
+
+    --color-grey-dark-1: #c5c4c1;
+    --color-grey-dark-2: #b5b3af;
+    --color-grey-dark-3: #9d9a94;
+    --color-grey-dark-4: #8c8983;
+    // Themes 
+    --color-primary: #ed4e14;
+
+    --color-primary-light-1: #f38963;
+    --color-primary-light-2: #f07244;
+
+    --color-primary-dark-1: #cf4310;
+    --color-primary-dark-2: #af390e;
+
+    --color-secondary: #00cec9;
+
+    --color-secondary-light-1: #02fff9;
+    --color-secondary-light-2: #00f0ea;
+
+    --color-secondary-dark-1: #009b97;
+    --color-secondary-dark-2: #007976;
+}
+
+// Global Set up
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px = 1rem;
+}
+
+body {
+    font-family: 'Overpass Mono', monospace;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+    color: inherit;
+}
+

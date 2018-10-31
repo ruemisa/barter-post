@@ -1,0 +1,26 @@
+.container {
+    max-width: 120rem;
+    margin: 10rem auto;
+    // Change later
+    background-color: var(--color-grey-dark-1);
+    // Place in css property later
+    box-shadow: 0 1rem 6rem var(--color-shadow);
+    //for testing
+    min-height: 50rem;
+}
+
+.header {
+
+}
+
+.sidebar {
+
+
+    &__navigation {
+
+    }
+}
+
+.product-display {
+
+}

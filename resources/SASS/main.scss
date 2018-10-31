@@ -1,4 +1,9 @@
-body {
-    background-color: orange;
-    font-family: 'Overpass Mono', monospace;
-}
+// Base
+@import "./base";
+
+// Components 
+@import "./components";
+
+// Layouts 
+@import "./layout";
+
