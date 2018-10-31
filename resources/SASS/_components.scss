@@ -4,6 +4,7 @@
 
 .logo {
     height: 3.25rem;
+    margin-left: 3rem;
 }
 
 //--------------------------------//
@@ -11,18 +12,60 @@
 //--------------------------------//
 
 .search {
-    &__input {
+    flex: 0 0 35%;
+    // Align items in search input
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--color-grey-light-2);
+        padding: 1rem 2rem;
+        margin-right: -2.5rem;
+        border: none;
+        border-radius: 5rem;
+        width: 85%;
+        transition: all .5s;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
+        // Styling placeholder
+        &::-webkit-input-placeholder {
+            font-weight: 300;
+            color: var(--color-grey-dark-2);
+        }
+    }
+
+    // To set background-color the same as input when focused
+    &__input:focus + &__btn {
+        background-color: var(--color-grey-light-3);
     }
 
     &__btn {
+        border: none;
+        background-color: var(--color-grey-light-2);
 
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(0.2rem);
+        }
     }
 
     &__icon {
         // Adjust as needed
         height: 2rem;
         width: 2rem;
+        // To change color of svg icon
+        fill: var(--color-grey-dark-4);
     }
 }
 
@@ -32,6 +75,8 @@
 
 
 .user-dock {
+    // Temporary
+    background-color: var(--color-primary-light-1);
     &__icon-box {
 
     }
