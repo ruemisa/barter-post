@@ -26,9 +26,14 @@
 .sidebar {
     // width of sidebar
     // Adjust later
-    flex: 0 0 18%;
+    flex: 0 0 20%;
     // Change later
-    background-color: var(--color-white);
+    background-color: var(--color-black-2);
+
+    // For the children
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-display {
@@ -36,4 +41,5 @@
     flex: 1;
     // For testing
     background-color: var(--color-secondary);
+    height: 80rem;
 }
