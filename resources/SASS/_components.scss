@@ -3,8 +3,8 @@
 //--------------------------------//
 
 .logo {
-    height: 3.25rem;
-    margin-left: 3rem;
+    height: 4.5rem;
+    margin-left: 2rem;
 }
 
 //--------------------------------//
@@ -13,7 +13,7 @@
 
 .search {
     flex: 0 0 35%;
-    // Align items in search input
+    // For child components
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,26 +75,61 @@
 
 
 .user-dock {
-    // Temporary
-    background-color: var(--color-primary-light-1);
-    &__icon-box {
+    align-self: stretch;
+    // For child components
+    display: flex;
+    align-items: center;
+    
+    // Space between containers
+    & > * {
+        height: 100%;
+        padding: 0 1.5rem;
+        cursor: pointer;
 
+        // For grandchildren components 
+        display: flex;
+        align-items: center;
+
+        &:hover,
+        &:active {
+            background-color: var(--color-grey-light-4);
+        }
+    }
+
+    &__icon-box {
+        position: relative;
     }
 
     &__icon {
         // Adjust as needed
         height: 2.25rem;
         width: 2.25rem;
+        fill: var(--color-grey-dark-4);
     }
 
     &__notification {
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        font-size: .8rem;
+        position: absolute;
+        top: 2rem;
+        right: .5rem;
+        // Center the text inside
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
     &__user {
         &-img {
             height: 3.75rem;
+            width: 3.75rem;
             border-radius: 50%;
+            margin-right: 1rem;
         }
         &-name {
 

@@ -52,8 +52,8 @@ li {
   color: inherit; }
 
 .logo {
-  height: 3.25rem;
-  margin-left: 3rem; }
+  height: 4.5rem;
+  margin-left: 2rem; }
 
 .search {
   flex: 0 0 35%;
@@ -93,13 +93,41 @@ li {
     fill: var(--color-grey-dark-4); }
 
 .user-dock {
-  background-color: var(--color-primary-light-1); }
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
+  .user-dock > * {
+    height: 100%;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+    .user-dock > *:hover, .user-dock > *:active {
+      background-color: var(--color-grey-light-4); }
+  .user-dock__icon-box {
+    position: relative; }
   .user-dock__icon {
     height: 2.25rem;
-    width: 2.25rem; }
+    width: 2.25rem;
+    fill: var(--color-grey-dark-4); }
+  .user-dock__notification {
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: .8rem;
+    position: absolute;
+    top: 2rem;
+    right: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .user-dock__user-img {
     height: 3.75rem;
-    border-radius: 50%; }
+    width: 3.75rem;
+    border-radius: 50%;
+    margin-right: 1rem; }
 
 .container {
   max-width: 120rem;
