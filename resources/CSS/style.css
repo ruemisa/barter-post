@@ -54,6 +54,18 @@ li {
 .logo {
   height: 3.25rem; }
 
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
+.user-dock__icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.user-dock__user-img {
+  height: 3.75rem;
+  border-radius: 50%; }
+
 .container {
   max-width: 120rem;
   margin: 10rem auto;

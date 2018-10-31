@@ -20,7 +20,9 @@
     }
 
     &__icon {
-
+        // Adjust as needed
+        height: 2rem;
+        width: 2rem;
     }
 }
 
@@ -35,7 +37,9 @@
     }
 
     &__icon {
-
+        // Adjust as needed
+        height: 2.25rem;
+        width: 2.25rem;
     }
 
     &__notification {
@@ -44,10 +48,11 @@
 
     &__user {
         &-img {
-
+            height: 3.75rem;
+            border-radius: 50%;
         }
         &-name {
-            
+
         }
     }
 }
