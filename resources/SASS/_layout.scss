@@ -58,5 +58,9 @@
 
 .bids {
     flex: 1;
+    // To center that link button at the bottom
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 

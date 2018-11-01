@@ -337,7 +337,7 @@ li {
     border-bottom: 1px solid var(--color-primary-dark-1); }
 
 .bid {
-  padding: 2rem;
+  padding: 3rem;
   margin-bottom: 3.5rem;
   background-color: var(--color-white);
   box-shadow: var(--shadow-2);
@@ -345,20 +345,56 @@ li {
   flex-direction: column;
   align-items: center; }
   .bid__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem; }
+    .bid__title--current {
+      color: var(--color-secondary-dark-1); }
+    .bid__title--previous {
+      color: var(--color-primary-dark-1); }
   .bid__user {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
     .bid__user-img {
-      height: 5rem;
-      width: 5rem;
-      border-radius: 50%;
-      margin-right: 1rem; }
-    .bid__user-name {
+      height: 6rem;
+      width: 6rem;
+      border-radius: 50%; }
+    .bid__user-name:link, .bid__user-name:visited {
+      margin-left: 1.5rem;
+      display: inline-block;
+      font-size: 1.3rem;
+      color: var(--color-primary);
+      transition: all .5s; }
+    .bid__user-name:hover, .bid__user-name:active {
+      color: var(--color-secondary); }
+  .bid__details {
+    align-self: flex-start; }
+    .bid__details-list {
       font-size: 1.3rem; }
+    .bid__details-item:not(:last-child) {
+      margin-bottom: .5rem; }
+
+.btn-inline {
+  display: inline-block;
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 0.1rem solid currentColor;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all .5s; }
+  .btn-inline span {
+    margin-left: .3rem;
+    transition: margin-left .5s; }
+  .btn-inline:hover {
+    color: var(--color-secondary-dark-1); }
+    .btn-inline:hover span {
+      margin-left: 1rem; }
+  .btn-inline:focus {
+    outline: none;
+    animation: pulse 1.5s infinite; }
 
 .container {
   max-width: 120rem;
@@ -403,4 +439,7 @@ li {
   box-shadow: var(--shadow-2); }
 
 .bids {
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
