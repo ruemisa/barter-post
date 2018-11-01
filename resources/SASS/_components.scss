@@ -492,11 +492,20 @@
         padding: .5rem 0;
         border-bottom: 1px solid transparent;
         transition: all .5s;
+
+        & span {
+            margin-left: .3rem;
+            transition: margin-left .5s;
+        }
     }
 
     &__link:hover {
         color: var(--color-secondary-dark-1);
         border-bottom: 1px solid var(--color-secondary-dark-1);
+
+        & span {
+            margin-left: 1rem;
+        }
     }
 
     &__link:active {
@@ -575,7 +584,7 @@
 }
 
 //--------------------------------//
-//-------------BUTTON-------------//
+//----------LINK TO BIDS-----------//
 //--------------------------------//
 
 .btn-inline {
@@ -606,5 +615,68 @@
     &:focus {
         outline: none;
         animation: pulse 1.5s infinite;
+    }
+}
+
+//--------------------------------//
+//---------------CTA--------------//
+//--------------------------------//
+
+.cta {
+    padding: 3.5rem;
+    text-align: center;
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+    }
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50rem;
+    color: var(--color-white);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow .5s;
+
+    & > * {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    &__visible {
+        display: inline-block;
+        padding: 2rem 6rem;
+        background-image: linear-gradient(to right, var(--color-primary-light-1), var(--color-primary));
+        
+    }
+    // Hover effect that replaces the visible button
+    &__hidden {
+        display: inline-block;
+        padding: 2rem 0;
+        position: absolute;
+        left: 0;
+        top: -100%;  
+        background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary-dark-1));
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+        color: transparent;
+    }
+
+    &:hover &__hidden {
+        top: 0;
     }
 }

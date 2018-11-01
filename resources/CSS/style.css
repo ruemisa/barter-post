@@ -329,9 +329,14 @@ li {
     padding: .5rem 0;
     border-bottom: 1px solid transparent;
     transition: all .5s; }
+    .bidders__link:link span, .bidders__link:visited span {
+      margin-left: .3rem;
+      transition: margin-left .5s; }
   .bidders__link:hover {
     color: var(--color-secondary-dark-1);
     border-bottom: 1px solid var(--color-secondary-dark-1); }
+    .bidders__link:hover span {
+      margin-left: 1rem; }
   .bidders__link:active {
     color: var(--color-primary-dark-1);
     border-bottom: 1px solid var(--color-primary-dark-1); }
@@ -395,6 +400,50 @@ li {
   .btn-inline:focus {
     outline: none;
     animation: pulse 1.5s infinite; }
+
+.cta {
+  padding: 3.5rem;
+  text-align: center; }
+  .cta__title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    text-transform: uppercase; }
+
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50rem;
+  color: var(--color-white);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .5s; }
+  .btn > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .5s; }
+  .btn__visible {
+    display: inline-block;
+    padding: 2rem 6rem;
+    background-image: linear-gradient(to right, var(--color-primary-light-1), var(--color-primary)); }
+  .btn__hidden {
+    display: inline-block;
+    padding: 2rem 0;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary-dark-1)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%);
+    color: transparent; }
+  .btn:hover .btn__hidden {
+    top: 0; }
 
 .container {
   max-width: 120rem;
