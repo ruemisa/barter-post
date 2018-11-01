@@ -45,6 +45,7 @@
     padding: 4rem;
     background-color: var(--color-grey-light-1);
     border-bottom: var(--border-1);
+    font-size: 1.5rem;
 }
 
 .description {
@@ -53,10 +54,9 @@
     padding: 3rem;
     background-color: var(--color-white);
     box-shadow: var(--shadow-2);
-    font-size: 1.5rem;
 }
 
 .bids {
     flex: 1;
-    background-color: red;
 }
+

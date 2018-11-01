@@ -285,6 +285,7 @@ li {
   margin-bottom: 2rem; }
 
 .list {
+  font-size: 1.4rem;
   margin: 2.5rem 0;
   padding: 2rem 0;
   border-top: var(--border-1);
@@ -335,6 +336,30 @@ li {
     color: var(--color-primary-dark-1);
     border-bottom: 1px solid var(--color-primary-dark-1); }
 
+.bid {
+  padding: 2rem;
+  margin-bottom: 3.5rem;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .bid__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .bid__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; }
+    .bid__user-img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      margin-right: 1rem; }
+    .bid__user-name {
+      font-size: 1.3rem; }
+
 .container {
   max-width: 120rem;
   margin: 10rem auto;
@@ -367,16 +392,15 @@ li {
   display: flex;
   padding: 4rem;
   background-color: var(--color-grey-light-1);
-  border-bottom: var(--border-1); }
+  border-bottom: var(--border-1);
+  font-size: 1.5rem; }
 
 .description {
   flex: 0 0 70%;
   margin-right: 4rem;
   padding: 3rem;
   background-color: var(--color-white);
-  box-shadow: var(--shadow-2);
-  font-size: 1.5rem; }
+  box-shadow: var(--shadow-2); }
 
 .bids {
-  flex: 1;
-  background-color: red; }
+  flex: 1; }
