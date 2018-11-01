@@ -20,6 +20,12 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-light-2);
+    }
+
     &__input {
         font-family: inherit;
         font-size: inherit;
@@ -36,6 +42,10 @@
             outline: none;
             width: 100%;
             background-color: var(--color-grey-light-3);
+
+            @media only screen and (max-width: $bp-smallest) {
+                background-color: transparent;
+            }
         }
         // Styling placeholder
         &::-webkit-input-placeholder {
@@ -145,7 +155,16 @@
     text-transform: uppercase;
     margin-top: 4rem;
     
+    @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+    }
+
     &__list {
+
+        @media only screen and (max-width: $bp-medium) {
+            display: flex;
+            margin: 0;
+        }
 
     }
 
@@ -154,6 +173,10 @@
 
         &:not(:last-child) {
             margin-bottom: 1rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin: 0;
+            }
         }
     }
 
@@ -190,7 +213,6 @@
 
     &__link:link,
     &__link:visited {
-        display: inline-block;
         padding: 1.5rem 3.5rem;
         color: var(--color-grey-light-4);
         position: relative;
@@ -198,6 +220,16 @@
         // Align Children
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 1.5rem 3rem;
+        }
     }
 
 
@@ -207,6 +239,13 @@
         margin-right: 2rem;
         // Current color of parent so hover will be the same
         fill: currentColor;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 0;
+            margin-bottom: 1rem;
+            heigth: 1.5rem;
+            width: 1.5rem;
+        }
     }
 
 }
@@ -217,11 +256,17 @@
 
 .side-footer {
     text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+    }
+
     &__nav {
 
     }
 
     &__list {
+        
     }
 
     &__item {
@@ -262,6 +307,10 @@
         color: var(--color-grey-light-4);
         font-size: 1.2rem;
         padding: 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
     }
 }
 
@@ -305,6 +354,11 @@
         text-transform: uppercase;
         letter-spacing: 0.15rem;
         padding: 2rem 3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+            padding: 1.5rem 2rem;
+        }
     }
 
     &__timer {
@@ -341,6 +395,10 @@
             border-bottom: 1px solid currentColor;
             transition: all .5s;
 
+            @media only screen and (max-width: $bp-small) {
+                border: none;
+            }
+
             &:hover {
                 color: var(--color-secondary-dark-1);
             }
@@ -348,6 +406,10 @@
             // Some simple focus effect
             &:focus {
                 animation: pulse 1.5s infinite;
+
+                @media only screen and (max-width: $bp-small) {
+                    animation: none;
+                }
             }
         }
     }
@@ -387,16 +449,33 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-small) {
+        padding: 0 1rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
     &__rating {
         font-size: 2rem;
         font-weight: 300;
         
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__icon {
         width: 1.25rem;
         height: 1.25rem;
         fill: var(--color-primary);
+
+        @media only screen and (max-width: $bp-small) {
+            height: 1rem;
+            width: 1rem;
+        }
     }
 
 }
@@ -470,7 +549,7 @@
     }
 
     &__list {
-
+        display: flex;
     }
 
     &__img {
@@ -526,6 +605,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-bottom: 2.5rem;
+    }
     
     &__title {
         font-size: 1.5rem;
@@ -626,6 +710,10 @@
     padding: 3.5rem;
     text-align: center;
 
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2.5rem 0;
+    }
+
     &__title {
         font-size: 2rem;
         font-weight: 300;
@@ -679,4 +767,5 @@
     &:hover &__hidden {
         top: 0;
     }
+
 }
