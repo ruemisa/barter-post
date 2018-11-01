@@ -281,6 +281,60 @@ li {
     height: 1.25rem;
     fill: var(--color-primary); }
 
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.list {
+  margin: 2.5rem 0;
+  padding: 2rem 0;
+  border-top: var(--border-1);
+  border-bottom: var(--border-1);
+  display: flex;
+  flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: 1rem; }
+  .list__item::before {
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    width: 2rem;
+    background-color: var(--color-secondary);
+    -webkit-mask-image: url(../img/SVG/chevron-small-right.svg);
+    mask-image: url(../img/SVG/chevron-small-right.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover; }
+
+.bidders {
+  font-size: 1.2rem;
+  color: var(--color-grey-dark-4);
+  display: flex;
+  align-items: center; }
+  .bidders__text {
+    margin-right: auto; }
+    .bidders__text--highlight {
+      color: var(--color-primary-dark-1); }
+  .bidders__img {
+    box-sizing: content-box;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50rem;
+    border: 0.25rem solid var(--color-white); }
+    .bidders__img:not(:last-child) {
+      margin-right: -1.5rem; }
+  .bidders__link:link, .bidders__link:visited {
+    display: inline-block;
+    margin-left: 1.5rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid transparent;
+    transition: all .5s; }
+  .bidders__link:hover {
+    color: var(--color-secondary-dark-1);
+    border-bottom: 1px solid var(--color-secondary-dark-1); }
+  .bidders__link:active {
+    color: var(--color-primary-dark-1);
+    border-bottom: 1px solid var(--color-primary-dark-1); }
+
 .container {
   max-width: 120rem;
   margin: 10rem auto;

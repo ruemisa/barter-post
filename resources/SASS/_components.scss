@@ -400,3 +400,106 @@
     }
 
 }
+
+//--------------------------------//
+//-----------PARAGRAPH------------//
+//--------------------------------//
+
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+//--------------------------------//
+//--------------LIST--------------//
+//--------------------------------//
+
+.list {
+    margin: 2.5rem 0;
+    padding: 2rem 0;
+    border-top: var(--border-1);
+    border-bottom: var(--border-1);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    // Places items side by side
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: 1rem;
+    }
+
+    &__item::before {
+        content: '';
+        display: inline-block;
+        height: 1.5rem;
+        width: 2rem;
+
+        // For Older browsers
+        // background-image: url(../img/SVG/chevron-small-right.svg);
+        // margin-right: .5rem;
+        // background-size: cover;
+
+        // For Newer Browsers
+        background-color: var(--color-secondary);
+        -webkit-mask-image: url(../img/SVG/chevron-small-right.svg);
+        mask-image: url(../img/SVG/chevron-small-right.svg);
+        -webkit-mask-size: cover;
+        mask-size: cover;
+
+        // ADD A FEATURE QUERY LATER
+    }
+}
+
+//--------------------------------//
+//------------BIDDERS-------------//
+//--------------------------------//
+
+.bidders {
+    font-size: 1.2rem;
+    color: var(--color-grey-dark-4);
+    display: flex;
+    align-items: center;
+
+    &__text {
+        margin-right: auto;
+
+        &--highlight {
+            color: var(--color-primary-dark-1);
+        }
+    }
+
+    &__list {
+
+    }
+
+    &__img {
+        box-sizing: content-box;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50rem;
+        border: 0.25rem solid var(--color-white);
+
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        display: inline-block;
+        margin-left: 1.5rem;
+        padding: .5rem 0;
+        border-bottom: 1px solid transparent;
+        transition: all .5s;
+    }
+
+    &__link:hover {
+        color: var(--color-secondary-dark-1);
+        border-bottom: 1px solid var(--color-secondary-dark-1);
+    }
+
+    &__link:active {
+        color: var(--color-primary-dark-1);
+        border-bottom: 1px solid var(--color-primary-dark-1);
+    }
+}

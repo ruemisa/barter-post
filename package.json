@@ -1,5 +1,5 @@
 {
-  "name": "Barter Trading Post",
+  "name": "barter-trading-post",
   "version": "1.0.0",
   "description": "A way for people to trade commodities",
   "main": "index.js",
