@@ -264,3 +264,27 @@
         padding: 3rem;
     }
 }
+
+// >>>>>> PRODUCT DISPLAY <<<<<< //
+
+//--------------------------------//
+//------------GALLERY-------------//
+//--------------------------------//
+
+.gallery {
+    display: flex;
+
+    &__item {
+        filter: opacity(.5);
+
+        &--current {
+            filter: opacity(1);
+            border-bottom: 0.3rem solid var(--color-primary);
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+}

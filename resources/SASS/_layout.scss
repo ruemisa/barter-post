@@ -2,7 +2,7 @@
     max-width: 120rem;
     margin: 10rem auto;
     // Change later
-    background-color: var(--color-grey-dark-1);
+    background-color: var(--color-grey-light-2);
     box-shadow: var(--shadow-1);
     //for testing
     min-height: 50rem;
@@ -40,6 +40,5 @@
     // width of display (remaining width)
     flex: 1;
     // For testing
-    background-color: var(--color-secondary);
     height: 80rem;
 }

@@ -197,10 +197,21 @@ li {
     font-size: 1.2rem;
     padding: 3rem; }
 
+.gallery {
+  display: flex; }
+  .gallery__item {
+    filter: opacity(0.5); }
+    .gallery__item--current {
+      filter: opacity(1);
+      border-bottom: 0.3rem solid var(--color-primary); }
+  .gallery__img {
+    display: block;
+    width: 100%; }
+
 .container {
   max-width: 120rem;
   margin: 10rem auto;
-  background-color: var(--color-grey-dark-1);
+  background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-1);
   min-height: 50rem; }
 
@@ -225,5 +236,4 @@ li {
 
 .product-display {
   flex: 1;
-  background-color: var(--color-secondary);
   height: 80rem; }
