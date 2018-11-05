@@ -1,3 +1,6 @@
+
+
+
 Photo Credits
 
 Current User Photo by Ana Tavares on Unsplash
@@ -16,3 +19,5 @@ bidder-1 Photo by Elti Meshau from Pexels
 bidder-2 Photo by bruce mars from Pexels
 bidder-3 Photo by YesManPro from Pexels
 bidder-4 Photo by Pixabay from Pexels
+
+Design Inspiraton from Jonas Schmedtmann of https://www.codingheroes.io/
